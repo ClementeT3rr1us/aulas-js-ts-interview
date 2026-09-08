@@ -16,3 +16,23 @@ function add(a, b) {
 console.log(add(2, 3)); // 5
 console.log(add(2, 3)); // 5
 
+// Impure function
+
+// An impure function can produce different results for the same input or modify something outside itself.
+
+// For example:
+
+let total = 10;
+
+function addToTotal(value) {
+  total += value;
+  return total;
+}
+
+// Another common example:
+
+function getRandomNumber() {
+  return Math.random();
+}
+
+console.log(getRandomNumber());
